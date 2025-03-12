@@ -1,4 +1,4 @@
-import { StyleSheet, TextComponent } from "react-native";
+import { StyleSheet } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
 const styles = StyleSheet.create({
   container: {
@@ -23,8 +23,7 @@ const styles = StyleSheet.create({
     textAlign : "center",
     textAlignVertical : "center",
   },
-
-  Texto: {
+    texto: {
     fontSize: RFPercentage(2.5),
     color: "deepskyblue",
   },
