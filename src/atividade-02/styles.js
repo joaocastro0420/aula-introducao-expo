@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         fontSize: RFPercentage(3),
         fontWeight: 'bold',
         borderWidth: 2,
-        borderColor: 'deepskyblue',
+        borderColor: '#000000',
         marginTop: 10,
         marginBottom: 10,
         padding: 8,
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
     },
     card: {
-        backgroundColor: '#f9f9f9',
+        backgroundColor: '#ffffff',
         borderRadius: 10,
         padding: 15,
         marginBottom: 20,
@@ -35,9 +35,9 @@ const styles = StyleSheet.create({
         elevation: 5,
         width: '90%',
     },
-    imagem: {
-        width: '100%',
-        height: 150,
+    imagemPequena: {
+        width: '80%', // Reduz a largura da imagem
+        height: 80,  // Altura menor para caber na tela
         resizeMode: 'contain',
         marginBottom: 10,
     },
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     },
     descricao: {
         fontSize: 14,
-        color: '#555',
+        color: '#000000',
         textAlign: 'center',
     },
 });
