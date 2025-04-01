@@ -1,41 +1,25 @@
 import { View, Text, Image } from 'react-native'; 
-import styles from './styles';
 
-// Caminhos corrigidos para as imagens
-import arma1 from '../../assets/arma1.png';
-import arma2 from '../../assets/arma2.png';
-import arma3 from '../../assets/arma3.png';
+import styles from './styles'; 
 
-function Exemplo2() {
-    return (
+import Card from './card';
+
+import img1 from '../../assets/arma1.png';
+import img2 from '../../assets/arma2.png';
+import img3 from '../../assets/arma3.png';
+
+
+
+function Atividade2 () {
+    return(
         <View style={styles.container}>
-            <Text style={styles.titulo}>Loja de Armas</Text>
-
-            {/* Anúncio 1 */}
-            <View style={styles.card}>
-                <Image source={arma1} style={styles.imagemPequena} />
-                <Text style={styles.nome}>AK-47</Text>
-                <Text style={styles.preco}>R$ 2.500,00</Text>
-                <Text style={styles.descricao}>A AK-47 é uma das armas mais populares do mundo, conhecida por sua confiabilidade e poder de fogo.</Text>
-            </View>
-
-            {/* Anúncio 2 */}
-            <View style={styles.card}>
-                <Image source={arma2} style={styles.imagemPequena} />
-                <Text style={styles.nome}>M4A1</Text>
-                <Text style={styles.preco}>R$ 3.000,00</Text>
-                <Text style={styles.descricao}>A M4A1 é uma arma versátil, ideal para combates de médio alcance, com alta precisão.</Text>
-            </View>
-
-            {/* Anúncio 3 */}
-            <View style={styles.card}>
-                <Image source={arma3} style={styles.imagemPequena} />
-                <Text style={styles.nome}>AWP</Text>
-                <Text style={styles.preco}>R$ 4.750,00</Text>
-                <Text style={styles.descricao}>A AWP é uma sniper poderosa, capaz de eliminar inimigos com um único disparo.</Text>
-            </View>
+            <Text style={styles.titulo}>Atividade 2</Text>
+            <Card titulo={'Camisa Branca e Preta'} img={img1} valor={'350,00'}>ak-47 branca.</Card>
+            <Card titulo={'Camisa Preta'} img={img2} valor={'380,00'}>m4a1 dragao.</Card>
+            <Card titulo={'Camisa Listrada'} img={img3} valor={'280,00'}>awp hyper beast.</Card>
+            
         </View>
     );
 }
 
-export default Exemplo2;
+export default Atividade2;
