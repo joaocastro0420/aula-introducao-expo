@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         color: 'deepskyblue', 
         fontWeight: 'bold', 
         borderWidth: 2, 
-        borderColor: '#000000', 
+        borderColor: 'deepskyblue', 
         marginTop: 10, 
         marginBottom: 10, 
         padding: 8, 
@@ -27,16 +27,30 @@ const styles = StyleSheet.create({
     texto: {
         fontSize: RFPercentage(2.2),  
     }, 
-    botaoAlerta: {
-        width: '100%', 
+    botaoAlert: {
+        width: '100%',         
         margin: RFPercentage(1),
-    },
+    }, 
+    numero: {
+        fontSize: RFPercentage(4), 
+        color: 'coral',
+        margin: RFPercentage(2)
+    }, 
     botao: {
-        width: '100%', 
-        margin: RFPercentage(1),
-        height: RFPercentage(5),
-        borderRadius: 20,
-    }
+        backgroundColor: 'deepskyblue', 
+        width: '70%', 
+        // height: RFPercentage(4), 
+        borderRadius: RFPercentage(2), 
+        alignItems: 'center', 
+        justifyContent: 'center', 
+        padding: RFPercentage(1),
+    }, 
+    txtBotao: {
+        fontSize: RFPercentage(2), 
+        color: '#fafafa', 
+        fontWeight: 'bold', 
+        letterSpacing: 1.5,
+    },
 });
 
 export default styles;

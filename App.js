@@ -18,6 +18,9 @@ import Atividade2 from './src/atividade-02';
 //exemplos 
 import Exemplo3 from './src/exemplos/ex-03';
 
+//atvidades
+import Atividade3 from './src/atividades-03';
+
 
 
 
@@ -25,7 +28,7 @@ import Exemplo3 from './src/exemplos/ex-03';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo3 />
+      <Atividade3 />
       <StatusBar style="auto" />
     </View>
   );
