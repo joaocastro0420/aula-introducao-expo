@@ -6,6 +6,14 @@ import styles from './styles';
 
 function Exemplo5() {
 
+  const [n1, setN1] = useState(0);
+  const [n2, setN2] = useState(0);
+  const [total, setTotal] = useState(0);
+
+  function Soma()  {
+    const conta = parseInt(n1) + parseInt(n2);
+    setTotal(conta.toString());
+  }
 
 
 
@@ -14,7 +22,7 @@ function Exemplo5() {
   <View style={styles.container}>
   <Text style={styles.paragraph}>Exemplo 5</Text>
 
-  <text style={styles.txtSaida}>Calculadora básica </text>
+  <Text style={styles.txtSaida}>Calculadora básica </Text>
 
   
   <Text style={styles.textLabel}> 1º numero </Text>
@@ -23,7 +31,7 @@ function Exemplo5() {
   onChangeText={(entrada) => setN1(entrada)}
   value={n1}
   />
-    <text style={styles.txtSaida}> +  </text>
+    <Text style={styles.txtSaida}> +  </Text>
 
   <Text style={styles.textLabel}> 2º numero </Text>
   <TextInput
@@ -31,7 +39,7 @@ function Exemplo5() {
   onChangeText={(entrada) => setN2(entrada)}
   value={n2}
   />
-  <text style={[styles.txtSaida, {margin: 0}]}>=  </text>
+  <Text style={[styles.txtSaida, {margin: 0}]}>=  </Text>
   <Text style={styles.textLabel}> Total </Text>
   <TextInput
   style={styles.txtEntrada}
@@ -39,14 +47,14 @@ function Exemplo5() {
   value={total}
   />
 
-<TouchableOpacity style={styles.button} onPress={() => Soma()}>
-  <text style={styles.txtbutton}> + </text>
+<TouchableOpacity style={styles.Button} onPress={() => Soma()}>
+  <Text style={styles.txtbutton}> + </Text>
   </TouchableOpacity>
 
   </View>
 
  
-  );
+  )
 }
 
 

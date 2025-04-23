@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#ff80ab",
     padding: 8,
-    flex : 1,
     justifyContent: "center",
   },
   paragraph: {
@@ -22,12 +21,12 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#E91E63",
   },
-  TextEntrada: {
+  txtEntrada: {
    borderWidth: 4,
    textAlign: "center",
    fontSize: 22,
    borderColor: "#E91E63",
-   height: 40,
+   height: 60,
    color: "#E53935",
    borderRadius: 10,
    marginTop: 10,
