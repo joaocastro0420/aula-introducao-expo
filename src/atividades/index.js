@@ -2,36 +2,33 @@ import { View, TouchableOpacity, Text } from "react-native";
 
 import styles from "./styles";
 
-export default function Exemplo() {
+export default function Atividade() {
     return(
         <View style={styles.container}>
-        <Text style={styles.titulo}>Exemplo</Text>
+        <Text style={styles.titulo}>Atividade</Text>
        
 
         <TouchableOpacity style={styles.button}>
-           <Text> Exemplo 1</Text>
+           <Text> Atividade 1</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button}>
-           <Text> Exemplo 2</Text>
+           <Text> Atividade 2</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button}>
-            <Text> Exemplo 3</Text>
+            <Text> Atividade 3</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button}>
-            <Text> Exemplo 4</Text>
+            <Text> Atividade 4</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button}>
-            <Text> Exemplo 5</Text>
+            <Text> Atividade 5</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}>
-           <Text> Exemplo 6</Text>
-        </TouchableOpacity>
-
+      
         
         
          

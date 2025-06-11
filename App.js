@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
 
 import Constants from 'expo-constants';
 
@@ -40,6 +41,14 @@ import Exemplo6 from './src/exemplos/ex-06';
 
 import Exemplos from './src/exemplos/';
 
+//atividades
+
+import Atividades from './src/atividades/';
+
+//atividades
+
+import Sobre from './src/sobre/index';
+
 
 
 
@@ -47,7 +56,7 @@ import Exemplos from './src/exemplos/';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplos/>
+      <Sobre/>
       <StatusBar style="auto" />
     </View>
   );
