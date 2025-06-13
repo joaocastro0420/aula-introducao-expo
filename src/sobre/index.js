@@ -1,6 +1,6 @@
 import {View, Text, ImageBackground } from 'react-native';   
 
-import styles from './styles';
+import styles from './styles.js';
 
 import  Imagem from '../../assets/react.png';
 
@@ -16,7 +16,7 @@ function Sobre() {
 
         >
         
-      <Text style={ styles.titulo}> exemplo 1</Text>
+      <Text style={ styles.titulo}> Sobre</Text>
       <Text style={styles.texto}>aula de react-native com expo</Text>
       <Text style={styles.texto}>Exemplos e Atividades</Text>
 

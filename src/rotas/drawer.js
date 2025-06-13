@@ -1,22 +1,19 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import Atividades from '../atividades';
+
+import  Tab from './tab';
 import Sobre    from '../sobre';
 
 const DrawerNavigator = createDrawerNavigator();
 
-export default function ContainerNavegacao() {
+export default function Navegacao() {
   return (
     <DrawerNavigator.Navigator>
-      <DrawerNavigator.Screen name="Atividades" component={Atividades} />
+      <DrawerNavigator.Screen name="Tab" component={Tab} />
       <DrawerNavigator.Screen name="Sobre" component={Sobre} />
     </DrawerNavigator.Navigator>
   );
-}
+};
 
-const MyDrawer = createDrawerNavigator({
-  screens: {
-    Atividades,
-    Sobre,
-  },
-});
+
+
 
